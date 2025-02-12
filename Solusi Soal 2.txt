@@ -1,0 +1,29 @@
+2. Solusi Soal 2
+
+PROGRAM KONVERSI_SUHU
+	DECLARE N, C, F, K, R: number
+BEGIN
+	INPUT(N)
+	IF N=C
+	  F = (C × 9/5) + 32
+	  K = C + 273.15
+	  R = C × 4/5
+	 ELSE IF N=F
+	    C = (F – 32) × 5/9
+	    K = (F – 32) × 5/9 + 273.15
+	    R = (F – 32) × 4/9
+	     ELSE IF N=K
+		C = K – 273.15
+		F = (K – 273.15) × 9/5 + 32
+		R = (K – 273.15) × 4/5
+		  ELSE IF N=R
+		     C = R × 5/4
+		     F = (R × 9/4) + 32
+		     K = (R × 5/4) + 273.15
+		  END IF
+	     END IF
+	 END IF
+	END IF
+	OUTPUT (PRINT C, F, K, R)
+END
+	
